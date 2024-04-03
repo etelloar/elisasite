@@ -1,0 +1,5 @@
+AddDefaultCharset UTF-8
+AddDefaultCharset off
+AddDefaultCharset windows-1252
+AddCharset utf-8 .html .css .php .txt .js
+DirectoryIndex pages/thema3.php

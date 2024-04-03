@@ -1,0 +1,151 @@
+﻿@charset "UTF-8";
+
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+ background-color: white;
+    color: #333;
+    text-align: center; 
+       padding: 10px;
+    display: flex;
+    justify-content: flex-start; 
+    
+     align-items: center; 
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el menú */
+nav {
+    margin-left: 20px; /* Añade un margen a la izquierda del menú si es necesario */
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    height: 5px;
+    padding: 0;
+}
+
+
+nav ul li {
+    display: inline; /* Distribuye las opciones horizontalmente */
+    margin-right: 10px; /* Espacio entre las opciones del menú */
+}
+
+
+nav ul li a {
+    color: #333; /* Texto oscuro */
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 0px solid #ccc; /* Borde gris suave */
+    border-radius: 4px; /* Esquinas redondeadas */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+/* Estilo para los enlaces de menú cuando se seleccionan */
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+/* Estilos para los enlaces de menú cuando no están seleccionados (subrayado) */
+
+nav ul li a:not(.active) {
+    text-decoration: underline; /* Subrayar texto */
+}
+/* Estilos para el contenido central */
+
+.content {
+    padding: 20px;
+    height: 70vh; /* 70% de la altura de la pantalla */
+    overflow-y: auto; /* Agregar barra de desplazamiento vertical si es necesario */	
+}
+
+/* Estilos para el pie de página (footer) */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    clear: both; /* Evita que el footer se superponga al contenido */
+}
+
+/* Estilos para los enlaces de redes sociales en el footer */
+
+.redes-sociales a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; /* Espacio entre los enlaces */
+}
+
+/* Estilos para la información de contacto en el footer */
+
+.informacion p {
+    margin: 0;
+}
+
+.mp3-list-container {
+    display: block; 
+    visibility: visible;
+    /* Agrega otros estilos según sea necesario */
+}
+
+/* Estilos para mensajes de éxito */
+
+.success-message {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Texto en blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 4px; /* Esquinas redondeadas */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para mensajes de error */
+
+.error-message {
+    background-color: #f44336; /* Color de fondo rojo */
+    color: white; /* Texto en blanco */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 4px; /* Esquinas redondeadas */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* En tu archivo de estilos CSS */
+
+.messages {
+    position: absolute;
+    top: 29px;
+    left: 10px;
+    width: 100%;
+    z-index: 1000; /* Asegura que se muestre encima de otros elementos */
+}
+
+.descargar-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.descargar-btn:hover {
+    background-color: #0056b3;
+}
